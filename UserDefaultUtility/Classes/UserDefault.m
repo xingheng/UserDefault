@@ -23,6 +23,11 @@ void UserDefaultRemoveKey(NSString *key)
     [StandardUserDefault removeObjectForKey:key];
 }
 
+void UserDefaultRegister(NSDictionary *defaultDictionary)
+{
+    [StandardUserDefault registerDefaults:defaultDictionary];
+}
+
 NSDictionary *UserDefaultAllValue()
 {
     return [StandardUserDefault dictionaryRepresentation];
@@ -30,7 +35,7 @@ NSDictionary *UserDefaultAllValue()
 
 void UserDefaultClearAllExcept(NSArray *keys)
 {
-    NSDictionary *dict = [StandardUserDefault dictionaryRepresentation];
+    NSDictionary *dict = UserDefaultAllValue();
     for (id key in dict) {
         if ([keys containsObject:key])
             continue;

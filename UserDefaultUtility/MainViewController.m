@@ -91,6 +91,10 @@
     
     UserDefaultClearAll();
     NSLog(@"After removing all the keys: %@", UserDefaultAllValue());
+    
+    UserDefaultRegister(@{kUserDefaultKey(new1): @"new value1", kUserDefaultKey(new2): @"new value2"});
+    NSLooog("%@", kUserDefaultKey(new1), UserDefaultObject);
+    NSLooog("%@", kUserDefaultKey(new2), UserDefaultString);
 }
 
 @end

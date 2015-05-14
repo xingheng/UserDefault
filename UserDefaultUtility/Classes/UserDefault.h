@@ -14,6 +14,8 @@ void UserDefaultSynchronize();
 
 void UserDefaultRemoveKey(NSString *key);
 
+void UserDefaultRegister(NSDictionary *defaultDictionary);
+
 NSDictionary *UserDefaultAllValue();
 
 void UserDefaultClearAllExcept(NSArray *keys);
