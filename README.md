@@ -7,7 +7,7 @@
     [[NSUserDefaults standardUserDefaults] setObject:@"fooValue" forKey:strUserDefaultKey];
     NSString *obj = [[NSUserDefaults standardUserDefaults] objectForKey:strUserDefaultKey];
 
-Tired of the above usage in your project? Why not **UserDefault**? It's simple and brief!
+Tired of the above usage in your project? **Why not UserDefault? It's simple and brief!**
 
 Let's do a replacement for the above code,
 
@@ -55,9 +55,8 @@ Besides, some useful helper functions serve for you, too.
 	void UserDefaultClearAll();
 	
 
-<br />
 ###Install
 
-Just download a copy of folder UserDefaultUtility/Classes and include the UserDefault.h/m to your project.
+Just download a copy of folder [UserDefaultUtility/Classes](https://github.com/xingheng/UserDefault/tree/master/UserDefaultUtility/Classes) and include the UserDefault.h/m to your project.
 
 ###Enjoy!
