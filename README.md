@@ -55,5 +55,9 @@ Besides, some useful helper functions serve for you, too.
 	void UserDefaultClearAll();
 	
 
-###Enjoy!
+<br />
+###Install
 
+Just download a copy of folder UserDefaultUtility/Classes and include the UserDefault.h/m to your project.
+
+###Enjoy!
