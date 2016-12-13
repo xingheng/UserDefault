@@ -1,5 +1,9 @@
 #UserDefault
 
+***This repository is deprecated since we've moved the core implementation to [here](https://github.com/xingheng/UserDefaultsHelper) for supporting cocoapods integration.***
+
+
+
 ####An utility wrapper class for NSUserDefault.
 
 >
@@ -19,18 +23,18 @@ Let's do a replacement for the above code,
 
 Certainly, there is a map list for all kinds of objects for you,
 
-Type	|	Getter	|	Setter
---------|-----------|-----------
-Integer		|	UserDefaultInteger	| 	SetUserDefaultInteger
-BOOL		|	UserDefaultBool		|	SetUserDefaultBool
-float		|	UserDefaultFloat	|	SetUserDefaultFloat
-double		|	UserDefaultDouble	| 	SetUserDefaultDouble
-NSURL		|	UserDefaultURL		|	SetUserDefaultURL
-NSString	|	UserDefaultString	|	SetUserDefaultObject
-NSArray		|	UserDefaultArray	|	SetUserDefaultObject
-NSDictionary|	UserDefaultDictionary|	SetUserDefaultObject
-NSData		|	UserDefaultData		|	SetUserDefaultObject
-id			|	UserDefaultObject	|	SetUserDefaultObject
+| Type         | Getter                | Setter                |
+| ------------ | --------------------- | --------------------- |
+| Integer      | UserDefaultInteger    | SetUserDefaultInteger |
+| BOOL         | UserDefaultBool       | SetUserDefaultBool    |
+| float        | UserDefaultFloat      | SetUserDefaultFloat   |
+| double       | UserDefaultDouble     | SetUserDefaultDouble  |
+| NSURL        | UserDefaultURL        | SetUserDefaultURL     |
+| NSString     | UserDefaultString     | SetUserDefaultObject  |
+| NSArray      | UserDefaultArray      | SetUserDefaultObject  |
+| NSDictionary | UserDefaultDictionary | SetUserDefaultObject  |
+| NSData       | UserDefaultData       | SetUserDefaultObject  |
+| id           | UserDefaultObject     | SetUserDefaultObject  |
 
 
 <br />
@@ -41,19 +45,19 @@ Besides, some useful helper functions serve for you, too.
 	
 	// Remove the specified key from userdefault.
 	void UserDefaultRemoveKey(NSString *key);
-
+	
 	// Register the specified default dictionary to userdefault.
 	void UserDefaultRegister(NSDictionary *defaultDictionary);
-
+	
 	// Return all the values in userdefault as a dictionary.
 	NSDictionary *UserDefaultAllValue();
-
+	
 	// Remove all the custome values except the specified keys' pair.
 	void UserDefaultClearAllExcept(NSArray *keys);
-
+	
 	// Remove all the custom values.
 	void UserDefaultClearAll();
-	
+
 
 ###Install
 
